@@ -11,7 +11,7 @@
 	<groupId>pl.iseebugs</groupId>
 	<artifactId>icon</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>icon-desktop</name>
+	<name>Spring Boot FX starter kit</name>
 	<description>JavaFX with SpringBoot Starter</description>
 
 	<properties>
