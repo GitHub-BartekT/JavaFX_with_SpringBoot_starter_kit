@@ -87,19 +87,19 @@
 
 	<build>
 		<plugins>
-			<plugin>
+			<!--<plugin>
 				<groupId>org.flywaydb</groupId>
 				<artifactId>flyway-maven-plugin</artifactId>
 				<version>10.17.0</version>
 				<configuration>
-					<url>jdbc:mysql://srv1574.hstgr.io:3306/u940617198_icon</url>
-					<user>u940617198_myIconUser</user>
-					<password>Nu!3PZHG</password>
+					<url>jdbc:mysql://   HOST    :    PORT   /   DB_NAME   </url>
+					<user>   USER_NAME   </user>
+					<password>   PASSWORD   </password>
 					<locations>
 						<location>filesystem:src/main/resources/db/migration</location>
 					</locations>
 				</configuration>
-			</plugin>
+			</plugin>-->
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
