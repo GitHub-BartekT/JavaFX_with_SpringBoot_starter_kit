@@ -1,0 +1,4 @@
+spring:
+  application:
+    ui:
+      title: JavaFX with SpringBoot - Starter
