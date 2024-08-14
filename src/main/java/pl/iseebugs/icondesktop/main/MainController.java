@@ -5,6 +5,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import lombok.RequiredArgsConstructor;
 import net.rgielen.fxweaver.core.FxmlView;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import pl.iseebugs.icondesktop.UtilClass;
 
@@ -16,9 +17,12 @@ public class MainController extends UtilClass {
     @FXML
     public Label label;
 
+    @Autowired
+    MainFacade mainFacade;
 
     @FXML
     public void initialize() {
+        label.setText(mainFacade.className());
     }
 
     @FXML
@@ -30,4 +34,5 @@ public class MainController extends UtilClass {
     private void handleGoToAView(ActionEvent event) {
         goToView(event, "/pl/iseebugs/a-view.fxml");
     }
+
 }

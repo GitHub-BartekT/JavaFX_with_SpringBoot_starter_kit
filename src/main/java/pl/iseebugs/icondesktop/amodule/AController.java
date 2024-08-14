@@ -2,6 +2,7 @@ package pl.iseebugs.icondesktop.amodule;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.Label;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -11,6 +12,9 @@ import pl.iseebugs.icondesktop.UtilClass;
 @Component
 public class AController extends UtilClass {
 
+    @FXML
+    Label label;
+
     @Autowired
     AFacade aFacade;
 
@@ -19,6 +23,7 @@ public class AController extends UtilClass {
 
     @FXML
     public void initialize () {
+        label.setText(aFacade.className());
         log.info("Switch to icon view.");
     }
 
